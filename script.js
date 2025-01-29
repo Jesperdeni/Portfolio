@@ -17,3 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(section);
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contact-form");
+    const successMessage = document.getElementById("success-message");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault(); // Prevent the form from submitting
+
+            // Simulate form submission (you can replace this with actual form submission logic)
+            setTimeout(() => {
+                contactForm.reset(); // Clear the form
+                successMessage.style.display = "block"; // Show success message
+            }, 1000);
+        });
+    }
+});
