@@ -1409,3 +1409,116 @@ footer{color:var(--muted);background:#080C11;border-top:1px solid var(--line)}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+
+/* =========================================================
+   FINAL PORTFOLIO PALETTE — MUTED SAGE / WARM CREAM / BURGUNDY
+   Sage is the calm foundation, cream is the warm surface,
+   burgundy is the single confident accent.
+   ========================================================= */
+:root{
+  --sage:#A5A79B;
+  --cream:#E8D2B5;
+  --burgundy:#590907;
+  --bg:#A5A79B;
+  --surface:#E8D2B5;
+  --surface-soft:#d9c5aa;
+  --ink:#590907;
+  --muted-ink:#67534b;
+  --line:rgba(89,9,7,.18);
+  --shadow:0 18px 48px rgba(48,24,20,.13);
+}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{
+  color:var(--ink)!important;
+  background:
+    radial-gradient(ellipse at 82% 4%,rgba(232,210,181,.55),transparent 38%),
+    linear-gradient(135deg,#A5A79B 0%,#b5b3a7 52%,#A5A79B 100%)!important;
+  background-attachment:fixed;
+}
+header{
+  background:rgba(89,9,7,.97)!important;
+  border-bottom:1px solid rgba(232,210,181,.22)!important;
+  box-shadow:0 8px 28px rgba(48,24,20,.15);
+  backdrop-filter:blur(16px);
+}
+nav ul li a,.social-links a{color:#E8D2B5!important}
+nav ul li a.active,nav ul li a:hover,.social-links a:hover{color:#A5A79B!important}
+h1,h2,h3,h4,h5,h6,strong,b{color:#590907}
+p,small,figcaption,.muted,.hero-description,.art-meta p,
+.category-heading p,.form-group label{color:#67534b}
+a{color:#590907}
+a:hover{color:#7b211d}
+.cta-button,.contact-form button{
+  color:#E8D2B5!important;background:#590907!important;
+  border:1px solid #590907!important;border-radius:5px;
+  box-shadow:0 8px 22px rgba(89,9,7,.16);
+  transition:transform .28s ease,box-shadow .28s ease,background .28s ease;
+}
+.cta-button:hover,.contact-form button:hover{
+  color:#E8D2B5!important;background:#741512!important;
+  transform:translateY(-3px);box-shadow:0 13px 28px rgba(89,9,7,.23);
+}
+.project-card,.internship-card,.contact-form,.ai-feature-card,
+.discipline-card,.art-card,.experience-card,.timeline-card,.tool-card{
+  color:#590907!important;
+  background:linear-gradient(145deg,#E8D2B5 0%,#e2cbb0 100%)!important;
+  border:1px solid rgba(89,9,7,.16)!important;
+  box-shadow:var(--shadow);
+  transition:transform .32s ease,border-color .32s ease,box-shadow .32s ease;
+}
+.project-card:hover,.internship-card:hover,.discipline-card:hover,
+.ai-feature-card:hover,.experience-card:hover,.timeline-card:hover,
+.tool-card:hover,.art-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(89,9,7,.42)!important;
+  box-shadow:0 22px 46px rgba(48,24,20,.18);
+}
+.project-card p,.internship-card p,.contact-form p,.ai-feature-card p,
+.discipline-card p,.art-card p,.experience-card p,.timeline-card p,
+.tool-card p{color:#67534b!important}
+.text-link,.project-link,.internship-link,.art-arrow{color:#590907!important}
+.category-icon,.project-type,.art-index{
+  color:#590907!important;background:#A5A79B!important;
+  border:1px solid rgba(89,9,7,.2)!important;
+}
+.filter-btn{
+  color:#590907!important;background:#E8D2B5!important;
+  border:1px solid rgba(89,9,7,.2)!important;
+}
+.filter-btn.active,.filter-btn:hover{
+  color:#E8D2B5!important;background:#590907!important;border-color:#590907!important;
+}
+.form-group input,.form-group textarea{
+  color:#590907!important;background:#E8D2B5!important;
+  border:1px solid rgba(89,9,7,.25)!important;
+}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#806e61}
+.form-group input:focus,.form-group textarea:focus{
+  outline:none;border-color:#590907!important;box-shadow:0 0 0 3px rgba(89,9,7,.1);
+}
+footer{
+  color:#E8D2B5!important;background:#590907!important;
+  border-top:1px solid rgba(232,210,181,.2)!important;
+}
+footer p,footer a{color:#E8D2B5!important}
+.hero-title span,.manifesto-content em,.eyebrow,.hero-kicker,
+.section-topline span:first-child{color:#590907!important}
+.hero-image-frame{border-color:rgba(89,9,7,.28)!important;box-shadow:0 22px 55px rgba(48,24,20,.18)}
+.hero-orbit{border-color:rgba(89,9,7,.2)!important}
+.profile-photo{border-color:#590907!important;box-shadow:0 0 0 8px rgba(89,9,7,.08),var(--shadow)}
+.floating-label,.hero-index,.visual-number{color:#590907!important}
+.status-dot{background:#590907;box-shadow:0 0 10px rgba(89,9,7,.35)}
+.gallery-toolbar,.category-heading,.section-topline,.manifesto-label{border-color:rgba(89,9,7,.2)!important}
+.art-image,.gallery-page .art-image{background:#A5A79B}
+.lightbox{background:rgba(35,20,18,.96)!important}
+.success-message{background:#E8D2B5!important;color:#590907!important;border:1px solid rgba(89,9,7,.25)}
+::selection{background:#590907;color:#E8D2B5}
+:focus-visible{outline:2px solid #590907;outline-offset:4px}
+@media(max-width:760px){
+  body{background-attachment:scroll}
+  header{background:rgba(89,9,7,.98)!important}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
