@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Selected AI-generated visual artworks by A Jesper Deni, created with Higgsfield and Nano Banana Pro.">
+<title>AI Visual Works | A Jesper Deni</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="gallery-page">
+<header><nav><ul>
+<li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="ai-tools.html">AI Tools</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="work-experience.html">Work Experience</a></li><li><a href="internship.html">Internships</a></li><li><a href="contact.html">Contact</a></li>
+</ul></nav></header>
+<main class="gallery-shell">
+<section class="gallery-hero">
+<p class="gallery-eyebrow">SELECTED AI ARTWORKS · 2026</p>
+<h1>Worlds imagined.<br><span>Visuals brought to life.</span></h1>
+<p>A selection of AI-generated scenes, characters and environments exploring cinematic storytelling, creature design and fantasy world-building.</p>
+<div class="gallery-credit"><i class="fas fa-wand-magic-sparkles"></i> Created with <strong>Higgsfield</strong> · <strong>Nano Banana Pro</strong></div>
+</section>
+<div class="gallery-toolbar">
+<div class="gallery-count"><strong>06</strong><span>Selected artworks</span></div>
+<div class="gallery-filters" role="group" aria-label="Filter artworks">
+<button class="filter-btn active" data-filter="all">All works</button><button class="filter-btn" data-filter="cinematic">Cinematic scenes</button><button class="filter-btn" data-filter="characters">Characters</button><button class="filter-btn" data-filter="creatures">Creatures</button><button class="filter-btn" data-filter="worlds">World building</button>
+</div></div>
+<section class="art-grid" aria-label="AI visual artwork gallery">
+<article class="art-card art-wide" data-category="cinematic"><div class="art-image"><img src="assets/warrior-ritual.png" alt="A weathered warrior pours glowing red liquid into a steaming vessel over fire" loading="lazy"><span class="art-index">01</span></div><div class="art-meta"><div><span class="art-type">CINEMATIC SCENE</span><h2>The Blood Ritual</h2><p>A firelit ritual moment framed through texture, atmosphere and dramatic contrast.</p></div><span class="art-arrow">↗</span></div></article>
+<article class="art-card" data-category="characters"><div class="art-image"><img src="assets/warrior-portrait.png" alt="Intense close-up portrait of a rugged fantasy warrior" loading="lazy"><span class="art-index">02</span></div><div class="art-meta"><div><span class="art-type">CHARACTER DESIGN</span><h2>The Ritual Keeper</h2><p>A close portrait study focused on expression, weathered skin and warm firelight.</p></div><span class="art-arrow">↗</span></div></article>
+<article class="art-card art-wide" data-category="worlds"><div class="art-image"><img src="assets/fantasy-city-day.png" alt="An immense fantasy city surrounded by water and mountains in daylight" loading="lazy"><span class="art-index">03</span></div><div class="art-meta"><div><span class="art-type">ENVIRONMENT DESIGN</span><h2>Empire of Light</h2><p>A monumental waterfront fantasy capital with a towering central palace and layered architecture.</p></div><span class="art-arrow">↗</span></div></article>
+<article class="art-card" data-category="creatures"><div class="art-image"><img src="assets/pink-forest-creature.png" alt="A cheerful pink furry fantasy creature with antlers and large eyes" loading="lazy"><span class="art-index">04</span></div><div class="art-meta"><div><span class="art-type">CREATURE DESIGN</span><h2>Forest Companion</h2><p>A playful fantasy creature concept built around expressive features and soft detail.</p></div><span class="art-arrow">↗</span></div></article>
+<article class="art-card art-wide" data-category="creatures"><div class="art-image"><img src="assets/ancient-swamp-beast.png" alt="A massive ancient creature emerging in a bioluminescent forest" loading="lazy"><span class="art-index">05</span></div><div class="art-meta"><div><span class="art-type">CREATURE & WORLD DESIGN</span><h2>The Ancient Swamp Beast</h2><p>A mysterious colossal creature surrounded by glowing flora, mist and deep cyan atmosphere.</p></div><span class="art-arrow">↗</span></div></article>
+<article class="art-card" data-category="worlds"><div class="art-image"><img src="assets/fantasy-city-night.png" alt="The same fantasy capital at night with illuminated towers and a dark atmospheric sky" loading="lazy"><span class="art-index">06</span></div><div class="art-meta"><div><span class="art-type">CINEMATIC ENVIRONMENT</span><h2>Empire After Dark</h2><p>A night-time interpretation of the fantasy capital, emphasizing mood, scale and illuminated architecture.</p></div><span class="art-arrow">↗</span></div></article>
+</section>
+<section class="gallery-note"><span>THE CREATIVE PROCESS</span><p>Concept development · Prompt engineering · Visual composition · AI image generation</p><small>AI image generation platform: Higgsfield · Model: Nano Banana Pro</small></section>
+</main>
+<div class="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close preview">×</button><img src="" alt=""></div>
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.art-card').forEach(card=>card.hidden=!(f==='all'||card.dataset.category===f));}));
+document.querySelectorAll('.art-image img').forEach(img=>img.addEventListener('click',()=>{const box=document.querySelector('.lightbox');box.querySelector('img').src=img.src;box.querySelector('img').alt=img.alt;box.classList.add('open');box.setAttribute('aria-hidden','false');}));
+const box=document.querySelector('.lightbox');box.addEventListener('click',e=>{if(e.target===box||e.target.classList.contains('lightbox-close')){box.classList.remove('open');box.setAttribute('aria-hidden','true');}});
+</script>
+</body></html>
