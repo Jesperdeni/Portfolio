@@ -1544,3 +1544,120 @@ footer p,footer a{color:#E8D2B5!important}
 .page-heading p{
   color:#590907!important;
 }
+
+
+/* =========================================================
+   AI VISUAL ARTIST — CINEMATIC MIDNIGHT STUDIO
+   Deep ink surfaces let artwork lead; violet + aqua add a
+   restrained digital/creative signature with readable type.
+   ========================================================= */
+:root{
+  --av-bg:#0B0D17;
+  --av-surface:#131827;
+  --av-raised:#1A2234;
+  --av-violet:#9875FF;
+  --av-aqua:#55D6D0;
+  --av-text:#F1F2F8;
+  --av-muted:#AAB2C5;
+  --av-line:rgba(170,178,197,.16);
+  --av-shadow:0 22px 60px rgba(0,0,0,.34);
+}
+html,body{background-color:var(--av-bg)!important;color:var(--av-text)!important}
+body{
+ background:
+  radial-gradient(ellipse at 82% 8%,rgba(85,214,208,.09),transparent 31%),
+  radial-gradient(ellipse at 12% 48%,rgba(152,117,255,.10),transparent 36%),
+  linear-gradient(140deg,#0B0D17 0%,#101626 55%,#0B111B 100%)!important;
+ background-attachment:fixed;
+}
+header{
+ background:rgba(11,13,23,.9)!important;
+ border-bottom:1px solid var(--av-line)!important;
+ box-shadow:0 10px 32px rgba(0,0,0,.24);
+ backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+}
+nav ul li a,.social-links a{color:var(--av-muted)!important}
+nav ul li a.active,nav ul li a:hover,.social-links a:hover{color:var(--av-aqua)!important}
+h1,h2,h3,h4,h5,h6,strong,b{color:var(--av-text)!important}
+p,small,figcaption,.muted,.hero-description,.hero-kicker,
+.page-subtitle,.section-subtitle,.section-description,.subtitle,
+.sub-title,.project-subtitle,.internship-subtitle,.gallery-subtitle,
+.contact-subtitle,.section-intro,.section-heading p,.page-heading p,
+.art-meta p,.category-heading p,.form-group label{
+ color:var(--av-muted)!important;
+}
+.eyebrow,.hero-title span,.manifesto-content em,.hero-kicker,
+.section-topline span:first-child{color:var(--av-aqua)!important}
+a,.text-link,.project-link,.internship-link,.art-arrow{color:var(--av-aqua)!important}
+a:hover,.text-link:hover,.project-link:hover,.internship-link:hover{color:var(--av-violet)!important}
+.cta-button,.contact-form button{
+ color:#0B0D17!important;
+ background:linear-gradient(110deg,#55D6D0 0%,#9875FF 100%)!important;
+ border:0!important;border-radius:6px;
+ box-shadow:0 9px 28px rgba(85,214,208,.14);
+ transition:transform .28s ease,box-shadow .28s ease,filter .28s ease;
+}
+.cta-button:hover,.contact-form button:hover{
+ color:#0B0D17!important;filter:brightness(1.08);
+ transform:translateY(-3px);
+ box-shadow:0 14px 34px rgba(152,117,255,.22);
+}
+.project-card,.internship-card,.contact-form,.ai-feature-card,
+.discipline-card,.art-card,.experience-card,.timeline-card,.tool-card{
+ color:var(--av-text)!important;
+ background:linear-gradient(145deg,#1A2234 0%,#131827 100%)!important;
+ border:1px solid var(--av-line)!important;
+ box-shadow:var(--av-shadow);
+ transition:transform .32s ease,border-color .32s ease,box-shadow .32s ease;
+}
+.project-card p,.internship-card p,.contact-form p,.ai-feature-card p,
+.discipline-card p,.art-card p,.experience-card p,.timeline-card p,
+.tool-card p{color:var(--av-muted)!important}
+.project-card:hover,.internship-card:hover,.discipline-card:hover,
+.ai-feature-card:hover,.experience-card:hover,.timeline-card:hover,
+.tool-card:hover,.art-card:hover{
+ transform:translateY(-5px);
+ border-color:rgba(85,214,208,.4)!important;
+ box-shadow:0 24px 52px rgba(0,0,0,.42),0 0 24px rgba(85,214,208,.06);
+}
+.category-icon,.project-type,.art-index{
+ color:var(--av-aqua)!important;background:rgba(85,214,208,.08)!important;
+ border:1px solid rgba(85,214,208,.22)!important;
+}
+.filter-btn{
+ color:var(--av-muted)!important;background:var(--av-surface)!important;
+ border:1px solid var(--av-line)!important;
+}
+.filter-btn.active,.filter-btn:hover{
+ color:#0B0D17!important;background:var(--av-aqua)!important;
+ border-color:var(--av-aqua)!important;
+}
+.form-group input,.form-group textarea{
+ color:var(--av-text)!important;background:#0F1421!important;
+ border:1px solid var(--av-line)!important;
+}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#778198!important}
+.form-group input:focus,.form-group textarea:focus{
+ outline:none;border-color:var(--av-aqua)!important;
+ box-shadow:0 0 0 3px rgba(85,214,208,.1);
+}
+footer{
+ color:var(--av-muted)!important;background:#080B13!important;
+ border-top:1px solid var(--av-line)!important;
+}
+footer p,footer a{color:var(--av-muted)!important}
+.hero-image-frame{border-color:rgba(85,214,208,.35)!important;box-shadow:0 25px 75px rgba(0,0,0,.42)}
+.hero-orbit{border-color:rgba(152,117,255,.2)!important}
+.profile-photo{border-color:var(--av-aqua)!important;box-shadow:0 0 0 8px rgba(85,214,208,.08),var(--av-shadow)}
+.floating-label,.hero-index,.visual-number{color:var(--av-text)!important}
+.status-dot{background:var(--av-aqua)!important;box-shadow:0 0 10px rgba(85,214,208,.55)}
+.gallery-toolbar,.category-heading,.section-topline,.manifesto-label{border-color:var(--av-line)!important}
+.art-image,.gallery-page .art-image{background:var(--av-bg)!important}
+.lightbox{background:rgba(5,7,13,.97)!important}
+.success-message{background:#142B2B!important;color:var(--av-aqua)!important;border:1px solid rgba(85,214,208,.25)!important}
+::selection{background:var(--av-violet);color:#fff}
+:focus-visible{outline:2px solid var(--av-aqua);outline-offset:4px}
+@media(max-width:760px){body{background-attachment:scroll}header{background:rgba(11,13,23,.97)!important}}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
