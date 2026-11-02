@@ -1223,3 +1223,91 @@ nav ul li a.active,nav ul li a:hover,
 .success-message{background:var(--forest);color:var(--crimson);border:1px solid var(--crimson)}
 ::selection{background:var(--crimson);color:var(--charcoal)}
 :focus-visible{outline:2px solid var(--crimson);outline-offset:4px}
+
+
+/* FINAL ART-DIRECTION PASS — charcoal dominant, forest green elevated,
+   crimson used only as a restrained highlight. Three brand colours only. */
+:root{
+  --charcoal:#171717;
+  --forest:#06110C;
+  --crimson:#A31C1B;
+  --cream:#A31C1B;
+  --muted:rgba(163,28,27,.76);
+  --line:rgba(6,17,12,.95);
+  --glass:rgba(6,17,12,.94);
+  --shadow:0 24px 70px rgba(6,17,12,.72);
+}
+html,body{background:var(--charcoal)}
+body{
+  color:var(--crimson);
+  background:
+    radial-gradient(ellipse at 78% 18%,rgba(6,17,12,.98) 0%,rgba(6,17,12,.55) 34%,transparent 66%),
+    linear-gradient(115deg,#171717 0%,#171717 42%,#06110C 100%);
+  background-attachment:fixed;
+}
+header{
+  background:rgba(6,17,12,.96);
+  border-bottom:1px solid rgba(6,17,12,1);
+  box-shadow:0 10px 30px rgba(6,17,12,.65);
+}
+nav ul li a{color:rgba(163,28,27,.72)}
+nav ul li a.active,nav ul li a:hover{color:var(--crimson)}
+h1,h2,h3,h4,h5,h6{color:var(--crimson)}
+p,.hero-description,.art-meta p,.category-heading p{color:rgba(163,28,27,.72)}
+/* Forest surfaces create the stronger green presence from the reference. */
+.project-card,.internship-card,.contact-form,.ai-feature-card,
+.discipline-card,.art-card,.experience-card,.timeline-card,.tool-card{
+  color:var(--crimson);
+  background:linear-gradient(145deg,#06110C 0%,#06110C 72%,#171717 100%);
+  border:1px solid rgba(6,17,12,.95);
+  box-shadow:0 18px 42px rgba(6,17,12,.58);
+}
+.project-card:hover,.internship-card:hover,.discipline-card:hover,
+.ai-feature-card:hover,.experience-card:hover,.timeline-card:hover,.tool-card:hover,
+.art-card:hover{
+  border-color:rgba(163,28,27,.5);
+  box-shadow:0 24px 52px rgba(6,17,12,.72),0 0 18px rgba(163,28,27,.08);
+  transform:translateY(-5px);
+}
+.cta-button,.contact-form button{
+  color:var(--charcoal);
+  background:var(--crimson);
+  border:1px solid var(--crimson);
+  box-shadow:0 8px 22px rgba(163,28,27,.12);
+}
+.cta-button:hover,.contact-form button:hover{
+  color:var(--charcoal);background:var(--crimson);
+  filter:brightness(1.08);transform:translateY(-2px);
+}
+.text-link,.project-link,.internship-link,.art-arrow{color:var(--crimson)}
+.category-icon,.project-type{
+  color:var(--crimson);background:var(--forest);
+  border:1px solid rgba(163,28,27,.25);
+}
+.filter-btn{color:var(--crimson);background:var(--charcoal);border:1px solid rgba(6,17,12,.95)}
+.filter-btn.active,.filter-btn:hover{color:var(--charcoal);background:var(--crimson);border-color:var(--crimson)}
+.form-group input,.form-group textarea{
+  color:var(--crimson);background:var(--charcoal);
+  border:1px solid rgba(6,17,12,.95);
+}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(163,28,27,.55)}
+.form-group input:focus,.form-group textarea:focus{outline:1px solid var(--crimson);border-color:var(--crimson)}
+footer{color:var(--crimson);background:var(--forest);border-top:1px solid rgba(6,17,12,.95)}
+.social-links a{color:var(--crimson)}
+.hero-title span,.manifesto-content em,.eyebrow,.hero-kicker{color:var(--crimson)}
+.hero-image-frame{border-color:rgba(6,17,12,.95);box-shadow:0 25px 75px rgba(6,17,12,.72)}
+.hero-orbit{border-color:rgba(6,17,12,.9)}
+.floating-label,.hero-index,.visual-number{color:var(--crimson)}
+.status-dot{background:var(--crimson);box-shadow:0 0 8px rgba(163,28,27,.45)}
+.profile-photo{border-color:var(--forest);box-shadow:0 0 0 8px rgba(6,17,12,.65),var(--shadow)}
+.art-image,.gallery-page .art-image{background:var(--charcoal)}
+.art-index{background:var(--forest);color:var(--crimson);border:1px solid rgba(163,28,27,.3)}
+.gallery-toolbar,.category-heading,.section-topline,.manifesto-label{border-color:rgba(6,17,12,.95)}
+.lightbox{background:rgba(6,17,12,.98)}
+.success-message{background:var(--forest);color:var(--crimson);border:1px solid rgba(163,28,27,.3)}
+::selection{background:var(--crimson);color:var(--charcoal)}
+:focus-visible{outline:2px solid var(--crimson);outline-offset:4px}
+@media(max-width:760px){
+  body{background-attachment:scroll}
+  header{background:rgba(6,17,12,.98)}
+}
