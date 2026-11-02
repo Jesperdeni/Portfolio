@@ -1170,3 +1170,56 @@ footer{
   body{background-attachment:scroll}
   header{background:rgba(10,15,12,.96)}
 }
+
+
+/* STRICT THREE-COLOUR PALETTE — no cream, grey, white or blue accents */
+:root{
+  --charcoal:#171717;
+  --forest:#06110C;
+  --crimson:#A31C1B;
+  --cream:#A31C1B;
+  --muted:#A31C1B;
+  --charcoal-soft:#171717;
+  --forest-mid:#06110C;
+  --forest-light:#06110C;
+  --crimson-bright:#A31C1B;
+  --line:rgba(163,28,27,.42);
+  --glass:rgba(6,17,12,.94);
+  --shadow:0 22px 65px rgba(6,17,12,.72);
+}
+body{color:var(--crimson);background:var(--charcoal)}
+p,small,figcaption,.muted,.hero-description,.art-meta p,
+.projects-container .project-card p,.ai-feature-card p,
+.category-heading p,.form-group label{color:rgba(163,28,27,.82)}
+h1,h2,h3,h4,h5,h6,strong,b,label{color:var(--crimson)}
+header,footer{background:var(--forest);border-color:rgba(163,28,27,.35)}
+nav ul li a,.social-links a{color:var(--crimson)}
+nav ul li a.active,nav ul li a:hover,
+.social-links a:hover{color:var(--crimson)}
+.project-card,.internship-card,.contact-form,.ai-feature-card,
+.discipline-card,.art-card,.experience-card,.timeline-card,.tool-card{
+  color:var(--crimson);
+  background:var(--forest);
+  border-color:rgba(163,28,27,.4);
+}
+.project-card:hover,.internship-card:hover,.discipline-card:hover,
+.ai-feature-card:hover,.experience-card:hover,.timeline-card:hover,.tool-card:hover{
+  border-color:var(--crimson);
+  box-shadow:0 20px 45px rgba(6,17,12,.8),0 0 22px rgba(163,28,27,.16);
+}
+.category-icon,.project-type,.filter-btn.active,.filter-btn:hover,
+.cta-button,.contact-form button{background:var(--crimson);color:var(--charcoal);border-color:var(--crimson)}
+.filter-btn{background:var(--charcoal);color:var(--crimson);border-color:rgba(163,28,27,.45)}
+.text-link,.project-link,.internship-link,.art-arrow{color:var(--crimson)}
+.form-group input,.form-group textarea{background:var(--charcoal);color:var(--crimson);border-color:rgba(163,28,27,.5)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(163,28,27,.65)}
+.profile-photo{border-color:var(--crimson);box-shadow:0 0 0 8px rgba(163,28,27,.12),var(--shadow)}
+.hero-image-frame{border-color:var(--crimson)}
+.hero-orbit{border-color:rgba(163,28,27,.38)}
+.status-dot{background:var(--crimson);box-shadow:0 0 12px rgba(163,28,27,.8)}
+.art-image,.gallery-page .art-image{background:var(--charcoal)}
+.art-index{background:var(--forest);color:var(--crimson);border-color:var(--crimson)}
+.lightbox{background:rgba(6,17,12,.97)}
+.success-message{background:var(--forest);color:var(--crimson);border:1px solid var(--crimson)}
+::selection{background:var(--crimson);color:var(--charcoal)}
+:focus-visible{outline:2px solid var(--crimson);outline-offset:4px}
