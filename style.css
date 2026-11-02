@@ -1661,3 +1661,53 @@ footer p,footer a{color:var(--av-muted)!important}
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+/* ===== AI VISUAL ARTIST: QUIET LUXURY / CREATIVE STUDIO THEME ===== */
+:root{
+ --bg:#101318;--surface:#181E28;--surface2:#202837;
+ --accent:#A99BFF;--accent2:#8CCFC2;
+ --text:#F1F0EC;--muted:#A8B0BC;
+ --line:rgba(218,225,238,.13);
+ --shadow:0 22px 58px rgba(0,0,0,.34);
+}
+html,body{background-color:#101318!important;color:#F1F0EC!important}
+body{
+ background:
+ radial-gradient(ellipse at 78% 6%,rgba(140,207,194,.07),transparent 34%),
+ radial-gradient(ellipse at 12% 42%,rgba(169,155,255,.075),transparent 38%),
+ linear-gradient(145deg,#101318 0%,#141A24 55%,#10151D 100%)!important;
+ background-attachment:fixed;
+}
+header{background:rgba(16,19,24,.91)!important;border-bottom:1px solid var(--line)!important;box-shadow:0 8px 28px rgba(0,0,0,.2);backdrop-filter:blur(18px)}
+nav ul li a{color:#A8B0BC!important}
+nav ul li a.active,nav ul li a:hover{color:#A99BFF!important}
+h1,h2,h3,h4,h5,h6,strong,b{color:#F1F0EC!important}
+p,small,figcaption,.muted,.hero-description,.hero-kicker,.page-subtitle,.section-subtitle,.section-description,.subtitle,.sub-title,.project-subtitle,.internship-subtitle,.gallery-subtitle,.contact-subtitle,.section-intro,.section-heading p,.page-heading p,.art-meta p,.category-heading p,.form-group label{color:#A8B0BC!important}
+.eyebrow,.hero-title span,.manifesto-content em,.section-topline span:first-child{color:#8CCFC2!important}
+a,.text-link,.project-link,.internship-link,.art-arrow{color:#A99BFF!important}
+a:hover,.text-link:hover,.project-link:hover,.internship-link:hover{color:#8CCFC2!important}
+.cta-button,.contact-form button{color:#101318!important;background:#A99BFF!important;border:1px solid #A99BFF!important;box-shadow:0 8px 24px rgba(169,155,255,.15);transition:transform .25s,box-shadow .25s}
+.cta-button:hover,.contact-form button:hover{color:#101318!important;background:#B9AEFF!important;transform:translateY(-2px);box-shadow:0 12px 30px rgba(169,155,255,.22)}
+.project-card,.internship-card,.contact-form,.ai-feature-card,.discipline-card,.art-card,.experience-card,.timeline-card,.tool-card{color:#F1F0EC!important;background:linear-gradient(145deg,#202837,#181E28)!important;border:1px solid var(--line)!important;box-shadow:var(--shadow);transition:transform .3s,border-color .3s,box-shadow .3s}
+.project-card p,.internship-card p,.contact-form p,.ai-feature-card p,.discipline-card p,.art-card p,.experience-card p,.timeline-card p,.tool-card p{color:#A8B0BC!important}
+.project-card:hover,.internship-card:hover,.discipline-card:hover,.ai-feature-card:hover,.experience-card:hover,.timeline-card:hover,.tool-card:hover,.art-card:hover{transform:translateY(-4px);border-color:rgba(140,207,194,.35)!important;box-shadow:0 24px 54px rgba(0,0,0,.4)}
+.category-icon,.project-type,.art-index{color:#8CCFC2!important;background:rgba(140,207,194,.08)!important;border:1px solid rgba(140,207,194,.2)!important}
+.filter-btn{color:#A8B0BC!important;background:#181E28!important;border:1px solid var(--line)!important}
+.filter-btn.active,.filter-btn:hover{color:#101318!important;background:#8CCFC2!important;border-color:#8CCFC2!important}
+.form-group input,.form-group textarea{color:#F1F0EC!important;background:#141A24!important;border:1px solid var(--line)!important}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#7F8999!important}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:#8CCFC2!important;box-shadow:0 0 0 3px rgba(140,207,194,.1)}
+footer{color:#A8B0BC!important;background:#0B0E13!important;border-top:1px solid var(--line)!important}
+footer p,footer a,.social-links a{color:#A8B0BC!important}
+.social-links a:hover{color:#8CCFC2!important}
+.hero-image-frame{border-color:rgba(140,207,194,.3)!important;box-shadow:0 25px 70px rgba(0,0,0,.42)}
+.hero-orbit{border-color:rgba(169,155,255,.18)!important}
+.profile-photo{border-color:#8CCFC2!important}
+.status-dot{background:#8CCFC2!important;box-shadow:0 0 10px rgba(140,207,194,.45)}
+.gallery-toolbar,.category-heading,.section-topline,.manifesto-label{border-color:var(--line)!important}
+.art-image,.gallery-page .art-image{background:#101318!important}
+.lightbox{background:rgba(7,9,14,.97)!important}
+.success-message{background:#182923!important;color:#8CCFC2!important;border:1px solid rgba(140,207,194,.2)!important}
+::selection{background:#A99BFF;color:#101318}
+:focus-visible{outline:2px solid #8CCFC2;outline-offset:4px}
+@media(max-width:760px){body{background-attachment:scroll}header{background:rgba(16,19,24,.97)!important}}
