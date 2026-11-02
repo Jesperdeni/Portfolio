@@ -1311,3 +1311,101 @@ footer{color:var(--crimson);background:var(--forest);border-top:1px solid rgba(6
   body{background-attachment:scroll}
   header{background:rgba(6,17,12,.98)}
 }
+
+
+/* =========================================================
+   PORTFOLIO BRAND THEME — MIDNIGHT / SLATE / AQUA / VIOLET
+   Designed for an AI visual creator: cinematic, premium, readable.
+   ========================================================= */
+:root{
+  --charcoal:#0B0F14;
+  --forest:#111D27;
+  --surface:#172633;
+  --accent:#48D6C8;
+  --accent-2:#9B8CFF;
+  --text:#EAF0F4;
+  --muted:#A6B4BF;
+  --line:rgba(166,180,191,.16);
+  --shadow:0 22px 60px rgba(0,0,0,.34);
+}
+html,body{background:var(--charcoal);color:var(--text)}
+body{
+  background:
+    radial-gradient(ellipse at 82% 8%,rgba(72,214,200,.09),transparent 32%),
+    radial-gradient(ellipse at 12% 52%,rgba(155,140,255,.08),transparent 38%),
+    linear-gradient(145deg,#0B0F14 0%,#101923 52%,#111D27 100%);
+  background-attachment:fixed;
+}
+header{
+  background:rgba(11,15,20,.88);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 10px 34px rgba(0,0,0,.22);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+}
+nav ul li a{color:var(--muted)}
+nav ul li a.active,nav ul li a:hover{color:var(--accent)}
+h1,h2,h3,h4,h5,h6,strong,b{color:var(--text)}
+p,small,figcaption,.muted,.hero-description,.art-meta p,
+.category-heading p,.form-group label{color:var(--muted)}
+a{color:var(--accent)}
+a:hover{color:var(--accent-2)}
+.cta-button,.contact-form button{
+  color:#0B0F14;background:linear-gradient(110deg,#48D6C8,#9B8CFF);
+  border:0;border-radius:7px;box-shadow:0 9px 28px rgba(72,214,200,.16);
+  transition:transform .28s ease,box-shadow .28s ease,filter .28s ease;
+}
+.cta-button:hover,.contact-form button:hover{
+  color:#0B0F14;transform:translateY(-3px);
+  box-shadow:0 14px 34px rgba(72,214,200,.23);filter:saturate(1.12);
+}
+.project-card,.internship-card,.contact-form,.ai-feature-card,
+.discipline-card,.art-card,.experience-card,.timeline-card,.tool-card{
+  color:var(--text);
+  background:linear-gradient(145deg,rgba(23,38,51,.96),rgba(17,29,39,.98));
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+.project-card:hover,.internship-card:hover,.discipline-card:hover,
+.ai-feature-card:hover,.experience-card:hover,.timeline-card:hover,
+.tool-card:hover,.art-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(72,214,200,.42);
+  box-shadow:0 25px 55px rgba(0,0,0,.4),0 0 26px rgba(72,214,200,.07);
+}
+.text-link,.project-link,.internship-link,.art-arrow{color:var(--accent)}
+.text-link:hover,.project-link:hover,.internship-link:hover{color:var(--accent-2)}
+.category-icon,.project-type{
+  color:var(--accent);background:rgba(72,214,200,.09);
+  border:1px solid rgba(72,214,200,.22);
+}
+.hero-title span,.manifesto-content em,.eyebrow,.hero-kicker,
+.section-topline span:first-child{color:var(--accent)}
+.hero-image-frame{border-color:rgba(72,214,200,.4);box-shadow:0 25px 75px rgba(0,0,0,.4)}
+.hero-orbit{border-color:rgba(155,140,255,.22)}
+.profile-photo{border-color:var(--accent);box-shadow:0 0 0 8px rgba(72,214,200,.08),var(--shadow)}
+.floating-label,.hero-index,.visual-number{color:var(--text)}
+.status-dot{background:var(--accent);box-shadow:0 0 12px rgba(72,214,200,.65)}
+.form-group input,.form-group textarea{
+  color:var(--text);background:#0E1720;border:1px solid var(--line);
+}
+.form-group input::placeholder,.form-group textarea::placeholder{color:#7F919E}
+.form-group input:focus,.form-group textarea:focus{
+  outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(72,214,200,.1);
+}
+footer{color:var(--muted);background:#080C11;border-top:1px solid var(--line)}
+.social-links a{color:var(--text)}
+.social-links a:hover{color:var(--accent)}
+.art-card{background:linear-gradient(145deg,#172633,#111D27)}
+.art-index{color:var(--accent);background:rgba(11,15,20,.84);border:1px solid var(--line)}
+.filter-btn{color:var(--muted);background:rgba(17,29,39,.8);border-color:var(--line)}
+.filter-btn.active,.filter-btn:hover{color:#0B0F14;background:var(--accent);border-color:var(--accent)}
+.gallery-toolbar,.category-heading,.section-topline,.manifesto-label{border-color:var(--line)}
+.lightbox{background:rgba(5,9,14,.96)}
+.success-message{background:#112B2A;color:var(--accent);border:1px solid rgba(72,214,200,.24)}
+::selection{background:var(--accent);color:#0B0F14}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+@media(max-width:760px){body{background-attachment:scroll}header{background:rgba(11,15,20,.96)}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
