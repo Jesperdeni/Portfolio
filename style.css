@@ -1522,3 +1522,25 @@ footer p,footer a{color:#E8D2B5!important}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+
+/* Subtitle contrast refinement: replace leftover white subtitle text
+   with the existing deep-burgundy brand colour. */
+.hero-kicker,
+.hero-description,
+.page-subtitle,
+.section-subtitle,
+.section-description,
+.subtitle,
+.sub-title,
+.project-subtitle,
+.internship-subtitle,
+.gallery-subtitle,
+.contact-subtitle,
+.eyebrow,
+.eyebrow-line,
+.section-intro,
+.section-heading p,
+.page-heading p{
+  color:#590907!important;
+}
