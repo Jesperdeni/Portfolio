@@ -45,16 +45,47 @@ document.addEventListener("DOMContentLoaded", () => {
     updateHeader();
     window.addEventListener("scroll", updateHeader, { passive: true });
 
-    // Existing contact form interaction
+    // Send contact enquiries to the portfolio owner's inbox.
     const contactForm = document.getElementById("contact-form");
     const successMessage = document.getElementById("success-message");
-    if (contactForm && successMessage) {
-        contactForm.addEventListener("submit", event => {
+    const errorMessage = document.getElementById("error-message");
+    const submitButton = document.getElementById("contact-submit");
+
+    if (contactForm && successMessage && errorMessage && submitButton) {
+        contactForm.addEventListener("submit", async event => {
             event.preventDefault();
-            setTimeout(() => {
+            successMessage.hidden = true;
+            errorMessage.hidden = true;
+
+            if (!contactForm.reportValidity()) return;
+
+            const originalButtonText = submitButton.textContent;
+            submitButton.disabled = true;
+            submitButton.textContent = "Sending...";
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: "POST",
+                    headers: { "Accept": "application/json" },
+                    body: new FormData(contactForm)
+                });
+
+                const result = await response.json();
+                if (!response.ok || result.success !== "true" && result.success !== true) {
+                    throw new Error(result.message || "The message service did not accept the submission.");
+                }
+
                 contactForm.reset();
-                successMessage.style.display = "block";
-            }, 700);
+                successMessage.hidden = false;
+                successMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            } catch (error) {
+                console.error("Contact form submission failed:", error);
+                errorMessage.hidden = false;
+                errorMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            }
         });
     }
 });
