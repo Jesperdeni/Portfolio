@@ -64,10 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
             submitButton.textContent = "Sending...";
 
             try {
+                const formData = new FormData(contactForm);
+                formData.set("_replyto", formData.get("email"));
+                const payload = Object.fromEntries(formData.entries());
+
                 const response = await fetch(contactForm.action, {
                     method: "POST",
-                    headers: { "Accept": "application/json" },
-                    body: new FormData(contactForm)
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(payload)
                 });
 
                 const result = await response.json();
