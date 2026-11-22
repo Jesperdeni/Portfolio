@@ -26,7 +26,10 @@
             <p>Feel free to reach out to me for collaborations or inquiries!</p>
 
             <!-- Contact Form -->
-            <form id="contact-form" class="contact-form">
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/ajax/jesperdeni00@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New portfolio enquiry from your website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_url" value="https://jesperdeni.github.io/Portfolio/contact.html">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -39,12 +42,15 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="cta-button">Send Message</button>
+                <button type="submit" class="cta-button" id="contact-submit">Send Message</button>
             </form>
 
             <!-- Success Message -->
-            <div id="success-message" class="success-message">
-                <p>Your message has been sent successfully!</p>
+            <div id="success-message" class="success-message" role="status" aria-live="polite" hidden>
+                <p>Your message has been sent successfully. Thank you for reaching out!</p>
+            </div>
+            <div id="error-message" class="success-message" role="alert" aria-live="assertive" hidden>
+                <p>Sorry, your message could not be sent. Please try again or email me directly.</p>
             </div>
         </div>
     </main>
